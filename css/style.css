@@ -25,6 +25,7 @@ ul, ol, li, menu {
 a {
     text-decoration: none;
     color: currentColor;
+    display: block;
 }
 
 /* buttons */
@@ -108,9 +109,9 @@ header {
     border-radius: 20px;
     text-align: center;
     height: 100%;
+    position: relative;
 }
 
-.card > *,
 .card__text > * {
     margin-bottom: 20px;
 }
@@ -131,6 +132,28 @@ header {
 .card__description {
     font-size: 1rem;
 }
+
+.bigger--card {
+    display: flex;
+}
+
+.bigger--card > * {
+    flex-basis: 50%;
+    text-align: left;
+}
+
+.bigger--card .card__img {
+    flex-grow: 1;
+    margin: 20px 0 -20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.bigger--card .card__img > img {
+    max-width: 200px;
+}
+
+
 
 
 
