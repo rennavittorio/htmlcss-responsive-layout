@@ -1,0 +1,19 @@
+/* responsive design */
+
+@media screen and (max-width: 991px) {
+    .burgermenu {
+        display: block;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .hero .col-3,
+    .hero .col-4 {
+        flex-basis: 100%;
+    }
+
+}

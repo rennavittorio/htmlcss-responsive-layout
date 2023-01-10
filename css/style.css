@@ -30,11 +30,18 @@ a {
 /* buttons */
 .button {
     border-radius: 50px;
+    width: fit-content;
 }
 
 .button--white {
     background-color: white;
     color: var(--dark);
+}
+
+.button--blue {
+    background-color: var(--blue);
+    color: white;
+    padding: 15px 45px;
 }
 
 
@@ -77,13 +84,12 @@ header {
     margin-top: 24px;
 }
 
-.hero .row {
-    margin: -24px;
+.col {
+    padding: 12px;
 }
 
-
-.hero .col {
-    padding: 24px;
+.col-6 {
+    flex-basis: calc(100% * (6/12));
 }
 
 .col-4 {
@@ -94,15 +100,19 @@ header {
     flex-basis: calc(100% * (8/12));
 }
 
+
+/* cards */
 .card {
     background-color: var(--lightblue);
     padding: 20px;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px 0;
-    min-height: 300px;
+    text-align: center;
+    height: 100%;
+}
+
+.card > *,
+.card__text > * {
+    margin-bottom: 20px;
 }
 
 .card__icon,
@@ -111,35 +121,15 @@ header {
 }
 
 .card__icon {
-    font-size: 48px;
+    font-size: 4rem;
 }
 
-
-
-
-
-
-/* responsive design */
-
-@media screen and (max-width: 991px) {
-    .burgermenu {
-        display: block;
-    }
-
-    .navbar ul {
-        display: none;
-    }
-
-    .container {
-        max-width: 700px;
-    }
+.card__title {
+    font-size: 1.25rem;
 }
 
-@media screen and (max-width: 575px) {
-    .hero .col-3,
-    .hero .col-4 {
-        flex-basis: 100%;
-    }
+.card__description {
+    font-size: 1rem;
 }
 
 
