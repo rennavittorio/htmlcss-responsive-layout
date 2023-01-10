@@ -45,17 +45,46 @@ a {
     padding: 15px 45px;
 }
 
+.button--purple {
+    background-color: var(--purple);
+    color: var(--dark);
+    width: 52px;
+    line-height: 52px;
+    border-radius: 50%;
+}
+
 
 /* container */
-
 .container {
     max-width: 1140px;
     margin: 0 auto;
 }
 
+.container--small {
+    max-width: 890px;
+    margin: 0 auto;
+}
+
+/* layout */
 .row {
     display: flex;
     flex-wrap: wrap;
+}
+
+.col {
+    padding: 12px;
+}
+
+.col-6 {
+    flex-basis: calc(100% * (6/12));
+}
+
+.col-4 {
+    flex-basis: calc(100% * (4/12));
+}
+
+.col-3 {
+    flex-basis: calc(100% * (8/12));
 }
 
 /* header */
@@ -85,25 +114,7 @@ header {
     margin-top: 24px;
 }
 
-.col {
-    padding: 12px;
-}
-
-.col-6 {
-    flex-basis: calc(100% * (6/12));
-}
-
-.col-4 {
-    flex-basis: calc(100% * (4/12));
-}
-
-.col-3 {
-    flex-basis: calc(100% * (8/12));
-}
-
-
-/* cards */
-.card {
+.card-hero {
     background-color: var(--lightblue);
     padding: 20px;
     border-radius: 20px;
@@ -152,6 +163,49 @@ header {
 .bigger--card .card__img > img {
     max-width: 200px;
 }
+
+/* planning section */
+.planning {
+    padding: 19px 0;
+    background-color: var(--purple);
+}
+
+.planning .row {
+    align-items: flex-end;
+}
+
+.planning .card__img-1 {
+    max-width: 400px;
+}
+
+.planning .card__img-2 {
+    max-width: 200px;
+}
+
+.card-planning > * {
+    margin-bottom: 20px;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-italics {
+    font-style: italic;
+}
+
+.card-planning--white {
+    background-color: white;
+    color: var(--dark);
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+
 
 
 

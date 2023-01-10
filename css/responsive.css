@@ -1,6 +1,7 @@
 /* responsive design */
 
 @media screen and (max-width: 991px) {
+    /* header */
     .burgermenu {
         display: block;
     }
@@ -9,9 +10,21 @@
         display: none;
     }
 
+
+    /* hero section */
     .bigger--card {
         flex-direction: column;
     }
+
+    /* planning section */
+    .planning .row {
+        flex-direction: column;
+    }
+
+    .planning .card__img {
+        max-width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 575px) {
