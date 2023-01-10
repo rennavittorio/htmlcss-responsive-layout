@@ -28,9 +28,20 @@
 }
 
 @media screen and (max-width: 575px) {
+    /* hero section */
     .hero .col-3,
     .hero .col-4 {
         flex-basis: 100%;
     }
+
+    /* testimonials section */
+    .card-testimonial {
+        flex-direction: column;
+    }
+
+    .card-testimonial .card__text {
+        text-align: center;
+    }
+
 
 }
