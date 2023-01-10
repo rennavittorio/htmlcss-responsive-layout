@@ -25,6 +25,11 @@
         max-width: 100%;
     }
 
+    /* benefits section */
+    .benefits .col-4 {
+        flex-basis: calc(100% * (6/12));
+    }
+
 }
 
 @media screen and (max-width: 575px) {
@@ -41,6 +46,11 @@
 
     .card-testimonial .card__text {
         text-align: center;
+    }
+
+    /* benefits section */
+    .benefits .col-4 {
+        flex-basis: 100%;
     }
 
 

@@ -34,6 +34,14 @@ main section {
     margin-top: 24px;
 }
 
+.card__title {
+    font-size: 1.25rem;
+}
+
+.card__description {
+    font-size: 1rem;
+}
+
 /* buttons */
 .button {
     border-radius: 50px;
@@ -57,6 +65,12 @@ main section {
     width: 52px;
     line-height: 52px;
     border-radius: 50%;
+}
+
+.button--purple-white {
+    background-color: var(--purple);
+    color: white;
+    padding: 15px 45px;
 }
 
 
@@ -129,21 +143,13 @@ header {
     margin-bottom: 20px;
 }
 
-.card__icon,
-.card__title {
+.hero .card__icon,
+.hero .card__title {
     color: var(--blue);
 }
 
-.card__icon {
+.hero .card__icon {
     font-size: 4rem;
-}
-
-.card__title {
-    font-size: 1.25rem;
-}
-
-.card__description {
-    font-size: 1rem;
 }
 
 .bigger--card {
@@ -285,6 +291,47 @@ header {
     height: 100%; 
     margin-left: -50px; 
 }
+
+/* benefits section */
+/* .benefits .container,
+.benefits .row,
+.benefits .col {
+    border: 2px dashed black;
+    padding: 20px;
+
+} */
+
+.benefits {
+    background-color: var(--purple);
+}
+
+.benefits .section__title {
+    color: white;
+    text-align: center;
+    padding: 70px 0;
+}
+
+.benefits .card {
+    background-color: white;
+    padding: 50px 30px 30px;
+    border-radius: 20px;
+}
+
+.benefits .card > * {
+    margin-bottom: 30px;
+}
+
+.benefits .card .number,
+.benefits .card .card__title {
+    color: var(--purple);
+    font-weight: 700;
+}
+
+.benefits .card .number {
+    font-size: 4rem;
+}
+
+
 
 
 
