@@ -447,6 +447,22 @@ header {
     color: var(--yellow);
 }
 
+/* footer */
+.footer {
+    background-color: var(--dark);
+    color: white;
+}
+
+.footer .col > * {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.footer a {
+    display: inline;
+    color: var(--purple);
+    text-decoration: underline;
+}
 
 
 
