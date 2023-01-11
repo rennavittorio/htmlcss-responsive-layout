@@ -73,26 +73,43 @@ main section {
     padding: 15px 45px;
 }
 
-
+/**********************
+********layout*********
+ *********************/
 /* container */
 .container {
-    max-width: 1140px;
+    max-width: 1204px;
     margin: 0 auto;
+    padding: 0 32px;
 }
 
 .container--small {
     max-width: 890px;
     margin: 0 auto;
 }
-
-/* layout */
 .row {
     display: flex;
     flex-wrap: wrap;
 }
 
-.col {
+.row.gutter {
+    margin: 0 12px;
+}
+
+.row.gutter [class^="col"] {
     padding: 12px;
+}
+
+/* .col {
+    padding: 12px;
+} */
+
+.col-12 {
+    flex-basis: 100%;
+}
+
+.col-8 {
+    flex-basis: calc(100% * (4/12));
 }
 
 .col-6 {
@@ -111,7 +128,6 @@ main section {
 header {
     background-color: var(--blue);
     color: white;
-    padding: 19px 0;
 }
 
 .navbar {
