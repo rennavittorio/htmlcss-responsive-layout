@@ -25,8 +25,8 @@
         max-width: 100%;
     }
 
-    .planning .card-planning--first {
-        padding-bottom: 20px;
+    .planning .card-planning--first img {
+        margin-bottom: 0;
     }
 
     /* benefits section */
@@ -34,9 +34,23 @@
         flex-basis: calc(100% * (6/12));
     }
 
+
+    /* about-us section */
+    .about-us .col-3,
+    .about-us .col-4 {
+        flex-basis: 50%;
+    }
+
+    .card-aboutus__quotemark {
+        right: 0;
+    }
 }
 
 @media screen and (max-width: 575px) {
+    main section {
+        padding: 25px 0;
+    }
+
     /* hero section */
     .hero .col-3,
     .hero .col-4 {
@@ -55,6 +69,20 @@
     /* benefits section */
     .benefits .col-4 {
         flex-basis: 100%;
+    }
+
+    /* about-us section */
+    .about-us .col-3,
+    .about-us .col-4 {
+        flex-basis: 100%;
+    }
+
+    .card-aboutus .card__img {
+        align-self: flex-start;
+    }
+
+    .card-aboutus__quotemark {
+        right: 25%;
     }
 
 
