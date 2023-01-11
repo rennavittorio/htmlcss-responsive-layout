@@ -30,7 +30,8 @@ a {
 
 
 /* general rules */
-main section {
+main section,
+footer section {
     padding: 50px 0;
 }
 
@@ -81,6 +82,12 @@ main section {
     padding: 15px 45px;
 }
 
+.button--white-purple {
+    background-color: white;
+    color: var(--purple);
+    padding: 15px 45px;
+}
+
 /**********************
 ********layout*********
  *********************/
@@ -102,7 +109,7 @@ main section {
 }
 
 .row.gutter {
-    margin: 0 12px;
+    margin: 0 -12px;
 }
 
 .row.gutter [class^="col"] {
@@ -367,6 +374,9 @@ header {
     padding: 20px;
 
 } */
+.card-aboutus {
+    padding: 0 40px;
+}
 
 .about-us .card-aboutus-text .card-aboutus-text__title {
     font-size: 4rem;
@@ -402,6 +412,44 @@ header {
     color: #9792e4;
     font-size: 2rem;
 }
+
+/* get-started section */
+.get-started {
+    background-color: var(--purple);
+    color: white;
+}
+
+.get-started .row {
+   justify-content: center;
+   align-items: center;
+}
+
+.get-started .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 0;
+    text-align: center;
+}
+
+.get-started .col h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.get-started .col h2 {
+    font-size: 1,5rem;
+}
+
+.get-started .col h1 {
+    font-size: 3rem;
+    color: var(--yellow);
+}
+
+
+
+
 
 
 

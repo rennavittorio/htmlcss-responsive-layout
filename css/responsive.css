@@ -51,6 +51,11 @@
         padding: 25px 0;
     }
 
+    .container,
+    .container--small {
+        padding: 0 16px;
+    }
+
     /* hero section */
     .hero .col-3,
     .hero .col-4 {
