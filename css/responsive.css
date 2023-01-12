@@ -40,10 +40,6 @@
     .about-us .col-4 {
         flex-basis: 50%;
     }
-
-    .card-aboutus__quotemark {
-        right: 0;
-    }
 }
 
 @media screen and (max-width: 575px) {
@@ -84,10 +80,6 @@
 
     .card-aboutus .card__img {
         align-self: flex-start;
-    }
-
-    .card-aboutus__quotemark {
-        right: 25%;
     }
 
 
